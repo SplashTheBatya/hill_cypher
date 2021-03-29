@@ -159,8 +159,8 @@ def hill_decipher(crypted_phrase: str, lang_crypt_dict: dict, key_word: str):
     return decrypt_phrase.upper()
 
 
-text = 'ЗАШИФРОВАННЫЙ ТЕКСТ ВСЕМ ОЧЕНЬ ИНТЕРЕСНО'
-key_word = 'ТРАНСЦЕНДЕНТНЫЙЯ'
+text = input('Введите текст для шифрования ')
+key_word = input('Введите слово-ключ, его длина должна иметь целочисленный корень ')
 print(f'Исходное сообщение: {text}')
 crypt_text = hill_cipher(text, russian_alph_dict, key_word)
 print(f'Зашифрованное сообщение: {crypt_text}')
